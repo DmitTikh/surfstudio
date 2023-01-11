@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Inter300';
+    src: url('../fonts/Inter/Inter300.ttf') format('truetype');
+    
+    }
+
+@font-face {
+    font-family: 'Inter400';
+    src: url('../fonts/Inter/Inter400.ttf') format('truetype');
+        
+    }
+@font-face {
+    font-family: 'Inter700';
+    src: url('../fonts/Inter/Inter700.ttf') format('truetype');
+    }
+
+@font-face {
+    font-family: 'Inter800';
+    src: url('../fonts/Inter/Inter800.ttf') format('truetype');
+    }
+
+@font-face {
+    font-family: 'Comfortaa400';
+    src: url('../fonts/Comfortaa/Comfortaa400.ttf') format('truetype');
+    }
+
+@font-face {
+    font-family: 'Comfortaa700';
+    src: url('../fonts/Comfortaa/Comfortaa700.ttf') format('truetype');
+    }
