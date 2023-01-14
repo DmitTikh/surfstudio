@@ -22,10 +22,28 @@ a {
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 .container {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+img {
+    object-fit: cover;
+}
+
+.title {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Comfortaa400', cursive;
+    font-size: 60px;
+    line-height: 67px;
 }
 
 .header {
@@ -77,7 +95,7 @@ header::after {
 }
 
 .header__btn {
-    text-decoration: uppercase;
+    text-transform: uppercase;
     color: #fff;
     padding: 12px 71px;
     background-color: #262C27;
@@ -123,7 +141,7 @@ header::after {
 .header__decor-text--one {
     z-index: 1;
     right: 145px;
-    bottom: 50px;
+    bottom: 0px;
 }
 
 .header__decor-text--one ,
@@ -150,3 +168,264 @@ header::after {
     font-style: italic;
     text-align: center;
 }
+
+.info {
+    background: url(../images/info_bg.jpg) center/cover no-repeat;
+    position: relative;
+    margin-top: 90px;
+    padding-bottom: 50px;;
+}
+.info::before {
+    content: '';
+    position: absolute;
+    height: 130px;
+    background-color: #262C27;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-100px);
+    z-index: 1;
+}
+
+.info__top {
+    display: flex;
+    gap: 80px;
+    padding-top: 100px;
+    margin-bottom: 65vh;
+}
+
+.info__top-text {
+    padding-top: 245px;
+    width: 290px;
+    color: #fff;
+    position: relative;
+}
+
+.info__top-img {
+    position: relative;
+    z-index: 6;
+}
+
+.popup-btn {
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute
+}
+
+.popup-btn span {
+    padding-top: 12px;
+    display: block;
+    color: #fff;
+}
+
+.info__btn {
+    bottom: 0;
+    right: 0;
+}
+.info__top-text--one {
+    padding-bottom: 125px;
+}
+.info__top-text--two {
+    border-bottom: 1px solid #fff;
+}
+
+.info__specs {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.info__specs-title {
+    width: 250px;
+}
+
+.info__specs-list {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 30px 0;
+    width: 565px;
+    font-weight: 700;
+}
+
+.info__specs-item {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 25px;
+
+}
+
+.info__specs-caption {
+    width: 140px;
+}
+
+.buy {
+    padding: 150px 0 0;
+
+}
+
+.buy__inner {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.buy__content {
+    width: 510px;
+    position: relative;
+}
+
+.buy__title { 
+    margin-bottom: 50px;
+    color: #0093A1;
+}
+
+.buy__list {
+    margin-bottom: 25px;
+}
+
+.buy__item {
+    margin-bottom: 25px;
+    width: 285px;
+}
+
+.buy__item:hover .buy__item-title{
+    color: #0093A1;
+}
+
+.buy__item-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: color .3s;
+}
+
+.buy__item-text {
+
+} 
+
+.buy__price {
+    position: absolute;
+    right: 0;
+    bottom: 130px;
+    width: 210px;
+    height: 199px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/star.svg);
+    background-repeat: no-repeat;
+}
+
+.buy__btn {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    text-transform: uppercase;
+    font-family: 'Comfortaa400', cursive;
+    background-color: transparent;
+    border: 2px solid #0093A1;
+    color: #0093A1;
+    cursor: pointer;
+    padding: 18px;
+    text-align: center;
+    max-width: 484px;
+    width: 100%;
+    transition: all 2s;
+}
+
+.buy__btn:hover{
+    background-color: #B9C400;
+    border-color: #B9C400;
+    color: #262C27;
+}
+
+.technology {
+    margin-bottom: 150px;
+}
+
+.technology__top {
+    background: url(../images/Micro_bg.png) center/cover no-repeat;
+    
+}
+
+.technology__top-inner {
+    position: relative;
+    min-height: 110vh;
+}
+
+.technology__btn {
+    position: absolute;
+    right: 350px;
+    top: 50vh;
+}
+
+.technology__top-box {
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+}
+
+.technology__title {
+    max-width: 470px;
+    margin-bottom: 62px;
+}
+
+.technology__list {
+    margin: 0;
+    padding-left: 24px;
+}
+
+.technology__list-item {
+    padding-left: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.gallery__box {
+    display: flex;
+    gap: 60px;
+    margin-top: 115px;
+}
+
+.gallery__text {
+    width: 350px;
+}
+
+.gallery__min {
+    display: grid;
+    gap: 30px 24px;
+    grid-template-columns: 481px 208px;
+    grid-template-rows: 432px 300px;
+    transform: translateY(-50%);
+    padding: 72px 31px 52px;
+}
+
+.gallery__min::before {
+    content: '';
+    position: absolute;
+    border: 3px solid #262C27;
+    border-radius: 200px 0px 300px;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.gallery__min-img--1 {
+    grid-column: 1/3;
+    border-radius: 430px 0 0 0;
+}
+.gallery__min-img--2 {
+    border-radius: 0 0 0 300px;
+}
+
