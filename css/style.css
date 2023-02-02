@@ -213,11 +213,20 @@ header::after {
     background-color: transparent;
     position: absolute
 }
+.popup-btn:hover path {
+    stroke: #B9C400;
+}
 
+.popup-btn:hover circle {
+    fill: #B9C400;
+}
 .popup-btn span {
     padding-top: 12px;
     display: block;
     color: #fff;
+}
+.popup-btn:hover span {
+    color: #0093A1;
 }
 
 .info__btn {
@@ -436,16 +445,26 @@ header::after {
 .gallery__max {
     display: grid;
     gap: 20px;
-    grid-template-columns: 300px 469px 391px;
-    grid-template-rows: 340px 270px 270px;
+    grid-template-columns: 300px 469px 391px; 
+    grid-template-rows: 340px 270px 270px; 
+
 }
 
-.gallery-max__img--2 {
+.gallery__max-img--2 {
     grid-column: 2 / -1;
-    align-self: end;
+    justify-self: end;  
+    border-radius: 0px 500px 0px 0px;
 } 
-
-.gallery-max__img--6 {
+.gallery__max-img--3 {
+    border-radius: 0px 0px 150px 0px;
+}
+.gallery__max-img--4 {
+    border-radius: 0px 200px 0px 0px;
+}
+.gallery__max-img--5 {
+    border-radius: 200px 0px 0px 0px;
+}
+.gallery__max-img--6 {
     grid-column: 2 / -1;
 }
 
@@ -456,7 +475,90 @@ header::after {
     font-weight: 800;
     font-size: 32px;
     line-height: 39px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
+.footer {
+    padding: 100px 0 80px;
+    background-color: #262C27;
+    color: #fff;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title {
+    margin-bottom: 27px;
+}
+
+.footer__form {
+    max-width: 500px;
+}
+
+.footer__form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 57px;
+    color: #fff;
+}
+
+.footer__form-input::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.2;
+}
+
+.footer__form-btn {
+    background-color: #fff;
+    padding: 10px 66px;
+    border: none;
+    margin-bottom: 110px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000;
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+}
+
+.footer__social-title {
+    margin-bottom: 28px;
+    font-weight: 700;
+}
+
+.footer__gallery {
+    display: grid;
+    gap: 52px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+}
+
+.footer__menu-list {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between ;
+}
+.footer__logo {
+    align-self: flex-start;
+}
+.footer__logo path {
+    transition: fill .3s;
+}
+
+.footer__logo:hover path {
+    fill: #0093A1;
+}
 
 
