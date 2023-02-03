@@ -213,12 +213,17 @@ header::after {
     background-color: transparent;
     position: absolute
 }
+
+.popup-btn path,
+.popup-btn circle {
+    transition: all .3s;
+}
 .popup-btn:hover path {
-    stroke: #B9C400;
+    fill: #B9C400;
 }
 
 .popup-btn:hover circle {
-    fill: #B9C400;
+    stroke: #B9C400;
 }
 .popup-btn span {
     padding-top: 12px;
@@ -318,7 +323,7 @@ header::after {
 
 .buy__price {
     position: absolute;
-    right: 0;
+    right: -50px;
     bottom: 130px;
     width: 210px;
     height: 199px;
@@ -329,7 +334,12 @@ header::after {
     justify-content: center;
     align-items: center;
     background-image: url(../images/star.svg);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
+    transition: transform .3s; 
+}
+
+.buy__price:hover {
+    transform: scale(1.3);
 }
 
 .buy__btn {
@@ -559,6 +569,13 @@ header::after {
 
 .footer__logo:hover path {
     fill: #0093A1;
+}
+
+
+@media (max-width: 1230px) {
+    .header__decor-text--two {
+        left: 0;
+    }
 }
 
 
